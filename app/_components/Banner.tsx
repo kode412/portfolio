@@ -1,5 +1,3 @@
-'use client';
-import ArrowAnimation from '@/components/ArrowAnimation';
 import Button from '@/components/Button';
 import { GENERAL_INFO } from '@/lib/data';
 import { useGSAP } from '@gsap/react';
@@ -35,7 +33,6 @@ const Banner = () => {
 
     return (
         <section className="relative overflow-hidden" id="banner">
-            {/* <ArrowAnimation /> */}
             <div
                 className="container h-[100svh] min-h-[530px] max-md:pb-10 flex justify-between items-center max-md:flex-col"
                 ref={containerRef}
