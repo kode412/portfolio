@@ -65,7 +65,7 @@ const Banner = () => {
                     </Button>
                 </div>
 
-                <div className="md:absolute bottom-[10%] right-[4%] flex md:flex-row gap-4 md:gap-6 text-center md:text-center">
+                <div className="md:absolute bottom-[10%] right-[4%] flex md:flex-col gap-4 md:gap-6 text-center md:text-center">
                     <div className="slide-up-and-fade">
                         <h5 className="text-3xl sm:text-4xl font-anton text-primary mb-1.5">
                             3+
