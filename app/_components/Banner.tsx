@@ -49,7 +49,7 @@ const Banner = () => {
                             Purwanto
                         </span>
                         . A creative Programmer with 4+ years of
-                        experience in building Interactive and responsive Web solutions.
+                        experience in building Interactive responsive Web solutions.
                     </p>
                     <Button
                         as="link"
