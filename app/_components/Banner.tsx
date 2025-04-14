@@ -1,3 +1,4 @@
+'use client';
 import Button from '@/components/Button';
 import { GENERAL_INFO } from '@/lib/data';
 import { useGSAP } from '@gsap/react';
