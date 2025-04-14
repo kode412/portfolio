@@ -8,7 +8,7 @@ export default function Home() {
     return (
         <div className="page-">
             <Banner />
-            <AboutMe />
+            {/* <AboutMe /> */}
             <Skills />
             <Experiences />
             <ProjectList />

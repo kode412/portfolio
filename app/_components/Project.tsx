@@ -157,7 +157,7 @@ const Project = ({ index, project, selectedProject, onMouseEnter }: Props) => {
                                     className="gap-3 flex items-center"
                                     key={tech}
                                 >
-                                    <span className="">{tech}</span>
+                                    <span className=" text-gray-800">{tech}</span>
                                     {idx !== stackArr.length - 1 && (
                                         <span className="inline-block size-2 rounded-full bg-background-light"></span>
                                     )}

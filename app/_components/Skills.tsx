@@ -60,18 +60,18 @@ const Skills = () => {
     return (
         <section id="my-stack" ref={containerRef}>
             <div className="container">
-                <SectionTitle title="My Stack" />
+                <SectionTitle title="Tech Stack"/>
 
                 <div className="space-y-20">
                     {Object.entries(MY_STACK).map(([key, value]) => (
                         <div className="grid sm:grid-cols-12" key={key}>
                             <div className="sm:col-span-5">
-                                <p className="slide-up text-5xl font-anton leading-none text-muted-foreground uppercase">
+                                <p className="slide-up text-5xl font-anton leading-none text-primary uppercase">
                                     {key}
                                 </p>
                             </div>
 
-                            <div className="sm:col-span-7 flex gap-x-11 gap-y-9 flex-wrap">
+                            <div className="text-gray-900 sm:col-span-7 flex gap-x-11 gap-y-9 flex-wrap">
                                 {value.map((item) => (
                                     <div
                                         className="slide-up flex gap-3.5 items-center leading-none"
@@ -102,13 +102,13 @@ const Skills = () => {
     return (
         <section id="my-stack" ref={containerRef}>
             <div className="container">
-                <SectionTitle title="My Stack" />
+                <SectionTitle title="Tech Stack" />
 
                 <div className="space-y-20">
                     {Object.entries(MY_STACK).map(([key, value]) => (
                         <div className="grid sm:grid-cols-12" key={key}>
                             <div className="sm:col-span-5">
-                                <p className="slide-up text-5xl font-anton leading-none text-muted-foreground uppercase">
+                                <p className="slide-up text-5xl font-anton leading-none uppercase">
                                     {key}
                                 </p>
                             </div>

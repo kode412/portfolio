@@ -11,8 +11,8 @@ const ParticleBackground = () => {
     useGSAP(() => {
         particlesRef.current.forEach((particle) => {
             gsap.set(particle, {
-                width: Math.random() * 3 + 1,
-                height: Math.random() * 3 + 1,
+                width: Math.random() * 8 + 1,
+                height: Math.random() * 8 + 1,
                 opacity: Math.random(),
                 left: Math.random() * window.innerWidth,
                 top: Math.random() * (window.innerHeight + 1),
@@ -37,7 +37,7 @@ const ParticleBackground = () => {
                     ref={(el) => {
                         particlesRef.current.push(el!);
                     }}
-                    className="absolute rounded-full bg-white"
+                    className="absolute rounded-full bg-black"
                 />
             ))}
         </div>

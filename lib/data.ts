@@ -1,26 +1,30 @@
 import { IProject } from '@/types';
 
 export const GENERAL_INFO = {
-    email: 'tasmirolislam@gmail.com',
+    email: 'ppurwanto01@gmail.com',
 
     emailSubject: "Let's collaborate on a project",
-    emailBody: 'Hi Tajmirul, I am reaching out to you because...',
+    emailBody: 'Hi Purwanto, I am reaching out to you because...',
 
-    oldPortfolio: 'https://www.legacy.me.toinfinite.dev',
+    // oldPortfolio: 'https://www.legacy.me.toinfinite.dev',
 };
 
 export const SOCIAL_LINKS = [
-    { name: 'github', url: 'https://github.com/Tajmirul' },
-    { name: 'linkedin', url: 'https://www.linkedin.com/in/tajmirul' },
-    { name: 'facebook', url: 'https://www.facebook.com/tajmirul.2000' },
-    { name: 'Old Version', url: GENERAL_INFO.oldPortfolio },
+    { name: 'github', url: 'https://github.com/kode412' },
+    { name: 'linkedin', url: 'https://www.linkedin.com/id/purwanto04' },
+    { name: 'facebook', url: 'https://www.facebook.com/purwanto04' },
+    // { name: 'Old Version', url: GENERAL_INFO.oldPortfolio },
 ];
 
 export const MY_STACK = {
-    frontend: [
+    web_Development: [
         {
             name: 'Javascript',
             icon: '/logo/js.png',
+        },
+        {
+            name: 'GSAP',
+            icon: '/logo/gsap.png',
         },
         {
             name: 'Typescript',
@@ -34,17 +38,13 @@ export const MY_STACK = {
             name: 'Next.js',
             icon: '/logo/next.png',
         },
+        // {
+        //     name: 'Redux',
+        //     icon: '/logo/redux.png',
+        // },
         {
-            name: 'Redux',
-            icon: '/logo/redux.png',
-        },
-        {
-            name: 'Tailwind CSS',
+            name: 'Tailwind',
             icon: '/logo/tailwind.png',
-        },
-        {
-            name: 'GSAP',
-            icon: '/logo/gsap.png',
         },
         {
             name: 'Frammer Motion',
@@ -58,19 +58,19 @@ export const MY_STACK = {
             name: 'Bootstrap',
             icon: '/logo/bootstrap.svg',
         },
-    ],
-    backend: [
         {
-            name: 'Node.js',
+            name: 'Laravel',
             icon: '/logo/node.png',
-        },
-        {
-            name: 'Nest.js',
-            icon: '/logo/nest.svg',
         },
         {
             name: 'Express.js',
             icon: '/logo/express.png',
+        },
+    ],
+    mobile: [
+        {
+            name: 'Flutter',
+            icon: '/logo/nest.svg',
         },
     ],
     database: [
@@ -87,7 +87,7 @@ export const MY_STACK = {
             icon: '/logo/mongodb.svg',
         },
         {
-            name: 'Prisma',
+            name: 'Firebase',
             icon: '/logo/prisma.png',
         },
     ],
@@ -220,23 +220,29 @@ export const PROJECTS: IProject[] = [
 
 export const MY_EXPERIENCE = [
     {
-        title: 'Software Engineer (Frontend)',
-        company: 'Strativ AB',
-        duration: 'Dec 2024 - Present',
+        title: 'Mobile Developer',
+        company: 'CV Cahaya Permata',
+        duration: 'Nov 2024 - Present',
     },
     {
-        title: 'Frontend Developer',
-        company: 'Epikcoders',
-        duration: 'Oct 2023 - Nov 2024',
+        title: 'Freelance Programmer',
+        company: 'CV Global Solusindo',
+        duration: 'Jun 2022 - Nov 2023',
     },
     {
-        title: 'FRONTEND ENGINEER',
-        company: 'Anchorblock Technology',
-        duration: 'Oct 2022 - Sep 2023',
+        title: 'Programmer',
+        company: 'PT Meister Sinergi Indonesia',
+        duration: 'Jan 2022 - May 2022',
     },
     {
-        title: 'Frontend Developer (Part-time)',
-        company: 'Branex IT',
-        duration: 'Jan 2022 - Oct 2022',
+        title: 'Web Programmer',
+        company: 'CV Batamic',
+        duration: 'Jan 2021 - Dec 2021',
+    },
+    {
+        title: 'Network Administration',
+        company: 'PT PLN APD Jawa Timur',
+        duration: 'Jun 2019 - Jan 2020',
     },
 ];
+
