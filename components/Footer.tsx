@@ -1,7 +1,7 @@
 import { GENERAL_INFO } from '@/lib/data';
 
 const Footer = async () => {
-    const repoStats = await fetch('https://api.github.com/repos/tajmirul/portfolio-2.0', {
+    const repoStats = await fetch('https://api.github.com/repos/kode412/portfolio', {
         next: {
             revalidate: 60 * 60, // 1 hour
         },
@@ -40,9 +40,9 @@ const Footer = async () => {
                         </div> */}
                     </li>
 
-                    {/* Note: If you are not Tajmirul, use this copyright message instead */}
-                    {/* <a href='https://github.com/Tajmirul/portfolio-2.0' className="leading-none text-muted-foreground hover:underline hover:text-white">
-                        Design & built by Tajmirul Islam <br />
+                    {/* Note: If you are not Purwanto, use this copyright message instead */}
+                    {/* <a href='https://github.com/kode412/portfolio' className="leading-none text-muted-foreground hover:underline hover:text-white">
+                        Design & built by Purwanto <br />
                         Revised by YOUR NAME
 
                         <div className="flex items-center justify-center gap-5 pt-1">

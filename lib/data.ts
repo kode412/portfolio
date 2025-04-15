@@ -191,7 +191,7 @@ export const PROJECTS: IProject[] = [
             '/projects/images/consulting-finance-2.png',
             '/projects/images/consulting-finance-3.png',
         ],
-        sourceCode: 'https://github.com/Tajmirul/crenotive',
+        sourceCode: 'https://github.com/kode412',
         liveUrl: 'https://crenotive.netlify.app/',
         year: 2023,
         description:
@@ -209,7 +209,7 @@ export const PROJECTS: IProject[] = [
             '/projects/images/devLinks-2.png',
             '/projects/images/devLinks-3.png',
         ],
-        sourceCode: 'https://github.com/Tajmirul/devsLink',
+        sourceCode: 'https://github.com/kode412',
         liveUrl: 'https://devlinks-demo.vercel.app/auth/signin',
         year: 2023,
         description:
