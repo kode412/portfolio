@@ -7,12 +7,16 @@ import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/all';
 import { ArrowLeft, ExternalLink, Github } from 'lucide-react';
 import React, { useRef } from 'react';
-import Markdown from 'react-markdown';
+import ReactMarkdown from 'react-markdown';
 import remarkGfm from 'remark-gfm';
 
 interface Props {
     project: IProject;
 }
+interface MarkdownProps {
+    children: string;
+    className?: string;
+  }
 
 gsap.registerPlugin(useGSAP, ScrollTrigger);
 
@@ -156,12 +160,15 @@ const ProjectDetails = ({ project }: Props) => {
                                 </p>
 
                                 <div className="text-lg">
-                                    <Markdown
-                                        className="markdown-text"
+                                    <ReactMarkdown
                                         remarkPlugins={[remarkGfm]}
-                                    >
+                                        components={{
+                                            p: ({ children }) => <p className="markdown-text">{children}</p>,
+                                            // You can also style h1, ul, etc. here
+                                        }}
+                                        >
                                         {project.description}
-                                    </Markdown>
+                                    </ReactMarkdown>
                                 </div>
                             </div>
                             {project.role && (
@@ -171,12 +178,16 @@ const ProjectDetails = ({ project }: Props) => {
                                     </p>
 
                                     <div className="text-lg">
-                                        <Markdown
-                                            className="markdown-text"
-                                            remarkPlugins={[remarkGfm]}
+                                    <ReactMarkdown
+                                        remarkPlugins={[remarkGfm]}
+                                        components={{
+                                            p: ({ children }) => <p className="markdown-text">{children}</p>,
+                                            // You can also style h1, ul, etc. here
+                                        }}
                                         >
-                                            {project.role}
-                                        </Markdown>
+                                        {project.description}
+                                    </ReactMarkdown>
+
                                     </div>
                                 </div>
                             )}
